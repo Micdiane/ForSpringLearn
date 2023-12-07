@@ -15,4 +15,12 @@ class User1Test {
         System.out.println(user1);
         // 实现注入
     }
+
+    @Test
+    void testToString2() {
+        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+        User2 user2 = (User2) ac.getBean("user2");
+        System.out.println(user2);
+        // 实现注入
+    }
 }

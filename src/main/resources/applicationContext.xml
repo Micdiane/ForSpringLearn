@@ -6,9 +6,17 @@
         <property name="username" value="Spring" />
     </bean>
 
-    <bean id="user1" class="com.itheima.User1">
-        <constructor-arg name="username" value="张三" />
-        <constructor-arg name="id" value="1" />
-        <constructor-arg name="password" value="123" />
+<!--    <bean id="user1" class="com.itheima.User1">-->
+<!--        <constructor-arg name="username" value="张三" />-->
+<!--        <constructor-arg name="id" value="1" />-->
+<!--        <constructor-arg name="password" value="123" />-->
+<!--    </bean>-->
+    <bean id="userDao"
+            class="com.itheima.dao.impl.UserDaoImpl">
     </bean>
+    <bean id="userService"
+            class="com.itheima.service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDao" />
+    </bean>
+    
 </beans>
