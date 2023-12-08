@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class User {
     @Value("1")
     private Integer id;
-    @Value("张三")
+    @Value("注入内容")
     private String name;
     @Value("123")
     private String password;
