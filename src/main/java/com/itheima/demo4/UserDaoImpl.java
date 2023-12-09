@@ -1,6 +1,6 @@
-package com.itheima.demo3;
+package com.itheima.demo4;
 
-public class UserDaoImpl implements UserDao{
+public class UserDaoImpl implements UserDao {
     @Override
     public void save() {
         System.out.println("保存用户");
